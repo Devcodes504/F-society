@@ -36,15 +36,15 @@ def escanear_red():
     time.sleep(1.0)
     print(f"{Style.BRIGHT}{Fore.GREEN}Escaneando  red... {Style.RESET_ALL}")
     try:
-        escaner.scan(hosts=red,arguments='-sn')
+        escaner.scan(hosts=red, arguments='-sn')
         for host in escaner.all_hosts():
-            print(f"\n{Style.BRIGHT}{Fore.CYAN}[+] IP: {host}{Style.RESET_ALL}") 
-            print(f"{Style.BRIGHT}{Fore.CYAN}[+] Estado: {escaner[host].state()}{Style.RESET_ALL}") 
-            if escaner [host].hostname():
+            print(f"\n{Style.BRIGHT}{Fore.CYAN}[+] IP: {host}{Style.RESET_ALL}")
+            print(f"{Style.BRIGHT}{Fore.CYAN}[+] Estado: {escaner[host].state()}{Style.RESET_ALL}")
+            if escaner[host].hostname():
                 print(f"{Style.BRIGHT}{Fore.CYAN}[+] Nombre: {escaner[host].hostname()}{Style.RESET_ALL}")
                 print("-" * 30)
     except:
-      	 print(f"{Style.BRIGHT}{Fore.RED}¡ocurrio un error!{Style.RESET_ALL}")
+        print(f"{Style.BRIGHT}{Fore.RED}¡ocurrio un error!{Style.RESET_ALL}")
 #num info
 def num_info():
     api = "2f6ba60a20ffe47f3d04f8ac4f465d9b"

@@ -40,9 +40,9 @@ def escanear_red():
         for host in escaner.all_hosts():
             print(f"\n{Style.BRIGHT}{Fore.CYAN}[+] IP: {host}{Style.RESET_ALL}") 
             print(f"{Style.BRIGHT}{Fore.CYAN}[+] Estado: {escaner[host].state()}{Style.RESET_ALL}") 
-        if escaner[host].hostname():
-            print(f"{Style.BRIGHT}{Fore.CYAN}[+] Nombre: {escaner[host].hostname()}{Style.RESET_ALL}")
-            print("-" * 30)
+            if escaner [host].hostname():
+                print(f"{Style.BRIGHT}{Fore.CYAN}[+] Nombre: {escaner[host].hostname()}{Style.RESET_ALL}")
+                print("-" * 30)
     except:
       	 print(f"{Style.BRIGHT}{Fore.RED}¡ocurrio un error!{Style.RESET_ALL}")
 #num info
